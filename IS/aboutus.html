@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>About us</title>
+    <!-- script for to get feedback from customers -->
+    <script type="text/javascript">
+        function validate()
+        {
+            var name = document.getElementById("name");
+            var number = document.getElementById("number");
+            var email = document.getElementById("email");
+            var feedback = document.getElementById("feedback");
+            if (name.value=="" || number.value=="" || email.value=="" || feedback.value=="" ) 
+            {
+                alert("Form Cannot be empty");
+                return false;
+
+            } else {
+                true;
+            }
+
+        }
+    </script>
+</head>
+<header>
+    <!-- for to create a suitable navigation bar -->
+<div class="navbar">
+    <div class="nav-logo border">
+        <div class="logo"> 
+            <a href="home.html">
+                <img src="./images/removed bg.png" style="width: 190px; margin-top: -50px; margin-left:-50px; height: 150px;"> 
+          </a>
+        </div>
+    </div>
+    <!-- to create a search bar -->
+    <div class="nav-search border">
+        <input placeholder="Search here" class="search-input">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+</div>
+<div class="panel">
+    <div class="panel-all">
+        <i class="fa-solid fa-bars"></i>   
+    <!-- Inline CSS used -->
+    </div>
+    <a href="home.html" target="_main" style="text-decoration:none">Home</a>
+        <a href="Blog.html" target="_main" style="text-decoration:none">Blog</a>
+        <a href="product.html" target="_main" style="text-decoration:none">Products</a>
+        <a href="research.html" target="_main" style="text-decoration:none">Research</a>
+        <a href="aboutus.html" target="-main" style="text-decoration: none">About Us</a>
+</div>
+</header>
+<body>
+<!-- from here it is all about our team members -->
+    <div class="about-us">
+        <h1 style="text-align: center; font-family:'Times New Roman';padding:30px 0 0 0;">Meet Our Members</h1>
+        <div class="au-info">
+            <div class="image-container">
+                <img src="team/debina.jpg" alt="owner1"> 
+                <div class="overlay">
+                    <h1>Debina Baraili</h1>
+                    <p>Address: Kerabari-10, Morang</p>
+                    <p>Phone number: 9827326929</p>
+                    <p>Email: debinabaraili94@gmail.com </p>
+                    <p>Age: 19 Years</p>
+                    <p>Hello viewers, I built About Us page of the website. I am currently enrolled in BSc(Hons)Computing</p>
+                </div>
+            </div>
+    
+            <div class="image-container">
+                <img src="team/bishal.jpg" alt="owner2">
+                <div class="overlay">
+                    <h1>Bishal Rai</h1>
+                    <p>Address: Belbari-4, Morang</p>
+                    <p>Phone number: 9811058691</p>
+                    <p>Email: infurnus555@gmail.com </p>
+                    <p>Age: 21 Years</p>
+                    <p>Hello viewers, I built product page of the website. I am currently enrolled in BSc(Hons)Computing</p>
+                </div>
+            </div>
+    
+            <div class="image-container" id="alter-position2">
+                <img src="team/nischal.jpg" alt="owner3">
+                <div class="overlay">
+                    <h1>Nischal Shrestha</h1>
+                    <p>Address: Ramdhuni-2, Sunsari</p>
+                    <p>Phone number: 9813958875</p>
+                    <p>Email:  nischals054@gmail.com </p>
+                    <p>Age: 21 Years</p>
+                    <p>Hello viewers, I built blog page of the website. I am currently enrolled in BSc(Hons)Computing</p>
+                </div>
+            </div>
+    
+            <div class="image-container" id="alter-position3">
+                <img src="team/muksam.jpg" alt="owner4">
+                <div class="overlay">
+                    <h1>Muksam Limbu</h1>
+                    <p>Address: Itahari-4, Sunsari</p>
+                    <p>Phone number: 9746888133</p>
+                    <p>Email: muksam2006@gmail.com </p>
+                    <p>Age: 19 Years</p>
+                    <p>Hello viewers, I built Home page of the website. I am currently enrolled in BSc(Hons)Computing</p>
+                </div>
+            </div>
+    
+            <div class="image-container" id="alter-position1">
+                <img src="team/ayush.jpg" alt="owner5">
+                <div class="overlay">
+                    <h1>Ayush Tamang</h1>
+                    <p>Address: Dharan-15</p>
+                    <p>Phone number: 9804433112</p>
+                    <p>Email: taayush949@gmail.com  </p>
+                    <p>Age: 19 Years</p>
+                    <p>Hello viewers, I built research page of the website. I am currently enrolled in BSc(Hons)Computing</p>
+                </div>
+            </div>
+
+        </div>
+<!-- from here on out it is the html for feedback form -->
+        <div class="feedback-contact">
+            <div class="contact">
+                <h1>Contact Us</h1>
+                <p>If you have any inquiries or questions, please kindly fill out the following form. Thank You!</p>
+            </div>
+            <form onsubmit=" return validate()" action="message.html">
+                <h2>GET IN TOUCH</h2>
+                <input type="text"  id="name" placeholder="Enter your name">
+                <input type="text" id="number" placeholder="Enter your number">
+                <input type="email" id="email" placeholder="abc@gmail.com">
+                <textarea name="feedback" id="feedback"  placeholder="How can we help you?" rows="4"></textarea>
+                <button type="submit">Submit</button> 
+            </form>
+        </div>
+
+    </div>
+    <footer>
+        <!-- from here on out it is for footer section -->
+        <div class="footer">
+            <p> If you need help then you can contact our Customer
+                Support
+                0255-00096.</p>
+            <hr>
+            <div class="footer-container">
+                <img src="./images/logo3.png" alt="logo">
+                <div class="footer_policy">
+                    <h3>Our Policy</h3>
+                    <ul>
+                        <li>shipping Process</li>
+                        <li>Warranties</li>
+                        <li>Privacy policy</li>
+                        <li>Terms Of use</li>
+                    </ul>
+                </div>
+                <div class="footer_social">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><i
+                                class="fa fa-facebook"></i>Facebook</li>
+                        <li><i class="fa fa-tiktok"></i>Tiktok</li>
+                        <li><i
+                                class="fa fa-instagram"></i>Instagram</li>
+                    </ul>
+                </div>
+                <div class="footer_service">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li>Contact us</li>
+                        <li><i class="fa fa-Phone-number"></i>call
+                            us
+                            025-2354</li>
+                        <li>Email www123@gmail.com</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p>Copyright © 2024,All Rights Recerved. </p>
+        </div>
+    </footer>
+</body>
+</html>

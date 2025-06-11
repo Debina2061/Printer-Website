@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        
+        body{   
+            background-image: url('images/back4.jpg');
+            /* background-size:cover; */
+
+        }
+        .message{
+            background-color: rgba(255,255,255,0.45);
+            padding:50px;
+            margin: 150px 30px 30px 30px;
+            border-radius:100px;
+
+        }
+        h1{
+            font-size:70px; 
+            text-align: center;
+            color: #292929;
+            margin: 10px;
+            padding:5px;
+        }
+        p{
+            font-size: x-large;
+            text-align: center;
+            width:75%;
+            color:#2e2828;
+            margin:10px 10px 10px 120px;
+            padding:5px;
+        }
+        .buttons{
+            padding-left: 43%;
+        }
+        .buttons button:hover{
+            box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;    
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <h1>Successfully signed In!!!</h1>
+        <p>Dear customer! Thank you for signing in, we hope your visit will be great from here on out.</p>
+        <div class="buttons">
+        <form onsubmit=" return validate()" action="home.html">
+        <button type="goto" onclick="show()">Go to Homepage</button>
+        </form>
+        </div>
+</body>
+</html>

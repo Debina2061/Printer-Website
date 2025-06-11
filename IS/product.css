@@ -1,0 +1,203 @@
+/* for the design of div box inside of a div boxes */
+.boxes .box{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+} 
+
+/* for the transition of box */
+.box {
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* for the hover of navbar */
+a:hover{
+    font-weight: bold;
+}
+
+/* for the hover of div box */
+.box:hover {
+    transform: scale(1.025);
+}
+
+/* for to add scroll in div boxes */
+.boxes {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 20rem;
+    overflow-x: scroll;
+    border: #0f1111;
+} 
+
+/* for the design of div navbar */
+.navbar{
+    height:60px;
+    background-color:rgb(44, 44, 44);
+    color:black;
+    display: flex;
+    align-items: center;
+}
+
+ /* first part of navbar */
+.nav-logo{
+    margin-left: 50px;
+    height:55px;
+    width:100px;
+}
+
+/* second part of navbar */
+.nav-search {
+    margin-left: 50px;
+    display:flex;
+    height:40px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+
+/* for the search option to hover */
+.nav-search:hover{
+    border:2px solid orange;
+}
+
+/* for the searchbar */
+.search-input{
+     width:620px;
+     font-size: 1rem;;
+     border: none;
+}
+
+/* for the design of search-icon */
+.search-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    font-size: 1.3rem;
+    background-color:rgb(255, 212, 131);
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    color: #0f1111;
+}
+
+
+/* styles for second line of header */
+.panel{ 
+    height:50px;
+    background-color:rgb(197, 191, 191);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.panel a{
+    color:black;
+}
+
+
+/* styles for body section */
+.body-section{
+    background-image: url(https://wallpapercave.com/wp/wp2502948.jpg);
+    height: 400px; 
+    background-size:cover;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* for the design of div price */
+.price{
+    position: absolute;
+    bottom: 20px;
+    transform: translateY(-100%);
+    display: flex;
+    align-items: center;
+}
+
+/* for to have space between regular-price and discount-price */
+.regularprice,
+ .discountprice{
+    margin-right: 10px;
+}
+
+/* for to know the discount-price */
+.discountprice{
+    color: red;
+}
+
+/* for to know the regular-price */
+.regularprice{
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+/* for to have the foundation for button   */
+.Buywrapper{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* for to see the buy-now button */
+.Buybutton{
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* for to design footer area */
+.footer {
+    background-color: black;
+    color: rgb(184, 174, 174);
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+
+
+    /* font-size: 1em; */
+    & p {
+        font-size: 15px;
+        text-align: center;
+        padding-block: 20px;
+    }
+
+    & hr {
+        height: 2;
+        width: 95vw;
+        margin-left: 2vw;
+    }
+
+    & img {
+        clip-path: circle();
+        width: 150px;
+        height: 300px;
+    }
+
+    & .footer-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 60px, 0px;
+
+        & ul li {
+            list-style-type: none;
+        }
+
+        & h3 {
+            color: white;
+            margin-bottom: 0px;
+        }
+        & li{
+                display: list-item;
+                text-align: -webkit-match-parent;
+                margin: 35px;
+        }
+
+    }
+
+}

@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+/* nav bar styles */
+.navbar{
+    height:60px;
+    background-color:rgb(44, 44, 44);
+    color:black;
+    display: flex;
+    align-items: center;
+}
+
+/* hover for navbar */
+a:hover{
+    font-weight: bold;
+}
+
+ /* first part of navbar */
+.nav-logo{
+    margin-left: 50px;
+    height:55px;
+    width:100px;
+    }
+
+/* second part of navbar */
+.nav-search {
+    margin-left: 50px;
+    display:flex;
+    height:40px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+.nav-search:hover{
+    border:2px solid orange;
+}
+.search-input{
+     width:620px;
+     font-size: 1rem;;
+     border: none;
+
+}
+.search-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    font-size: 1.3rem;
+    background-color:rgb(255, 212, 131);
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    color: #0f1111;
+}
+
+
+/* styles for second line of header */
+.panel{ 
+    height:50px;
+    background-color:rgb(197, 191, 191);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.panel a{
+    color:black;
+}
+
+
+/* styles for body section */
+.body-section{
+    background-image: url(https://wallpapercave.com/wp/wp2502948.jpg);
+    height: 400px; 
+    background-size:cover;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+ /* Styles for About Us Page */
+ .about-us{
+    background-image: url('back4.jpg');
+ }
+ .au-info{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+ .image-container {
+    height:550px;
+    width:550px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin:50px 0 0 20px; 
+    border:2px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+ }
+
+ /* the alter id are given to alter position of only 3 images in about section  */
+ #alter-position1{
+    position: relative;
+    bottom: 604px;
+ }
+ #alter-position2{
+    position: relative;
+    top: 604px;
+ }
+ #alter-position3{
+    position: relative;
+    top: 604px;
+ }
+ 
+ .image-container img{
+    height:550px;
+    width:100%;
+ }
+
+
+ .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.404);
+    opacity: 0;
+    transition-duration: 3s;    
+ }
+
+ .overlay h1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffa601;
+    padding:350px 0 0 50px;
+ }
+
+ .overlay p{
+    font-family:'Times New Roman';
+    font-size:20px;
+    color:white;
+    padding-left: 50px;
+ }
+
+
+ .image-container:hover .overlay{
+    opacity: 1;
+ }
+
+ .image-container > .overlay{
+    transform:translateY(25px);
+    transition: transform 0.6s;
+
+}
+
+.image-container:hover > .overlay{
+    transform:translateY(0px);
+    transition: transform 0.6s;
+    
+}
+
+
+/* feedback and contacts */
+.feedback-contact{
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    /* border-top:1px solid black; */
+    border-bottom:1px solid black;
+    padding:20px;
+    background-color:rgba(148, 148, 148, 0.3);
+}
+.contact{
+    height: 400px;
+    width:50%;
+    background-color:#2d3436;
+    padding:10px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+} 
+.contact h1{
+    font-size: 60px;
+    font-family: serif;
+    color:white;
+} 
+.contact p{
+    text-align: center;
+    color:white;
+}
+
+
+/* form */
+form{
+    width:45%;
+    margin-left: 50px;
+    border-radius:5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+form h2{
+    text-align: center;
+    color:#555;
+    font-family: 'Times New Roman';
+}
+form input, form textarea{
+    width: 400px;
+    margin-top: 10px;
+    padding:10px;
+    font-size: 15px;
+    background: #f5f5f5;
+    border-radius: 3px;
+    border: 1.5px solid transparent
+}
+form input:hover{
+    border:1.5px solid black;
+}
+form textarea:hover{
+    border:1.5px solid black;
+}
+form button{
+    padding:10px;
+    width: 30%;
+    font-size: 18px; 
+    background-color: #ff5361;
+    border-radius:50px;
+    cursor: pointer;
+    border:2px solid transparent;
+}
+form button:hover{
+    border:2px solid black;
+}
+
+.foot-panel1{
+    height:180px;
+    background-color: rgb(114, 114, 114);
+    display: flex;
+    font-size: 1.1rem;
+    align-items: center;
+    padding:15px;
+}
+ul a{
+    display:flex;
+    margin-top:10px;
+    font-size: 1rem;
+}
+.last-panel{
+    height:40px;
+    background-color: rgb(44, 44, 44);
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ /* About Us Page */
+ .about-us{
+    padding:40px;
+    background-color:rgb(211, 211, 211);
+    background-image: url('back4.jpg');
+ }
+ .box-au{
+    padding:10px;
+    display:flex;
+    margin:50px;
+
+    border: 2.5px solid black;
+    color:black;
+} 
+.box-au img{
+    border-radius:50%;
+    height:250px;
+    /* border:2px solid black; */
+}
+.info{
+    margin-left: 40px;
+}
+
+.info p{
+    margin-bottom:20px;
+}
+
+
+
+/* feedback and contacts */
+
+.feedback-contact{
+    margin-left: 50px;
+    display: flex;
+}
+.contact{
+    height: 400px;
+    width:50%;
+    background-color:#2d3436;
+    padding:10px;
+} 
+.contact h1{
+    font-size: 60px;
+    font-family: serif;
+    color:white;
+    padding-bottom: 0px;
+    text-align: center;  
+} 
+.contact p{
+    text-align: center;
+    color:white;
+    margin-top:15px;
+
+}
+form{
+    margin-left:70px;
+    display: grid;
+}
+
+/* for footer */
+.footer {
+    background-color: black;
+    color: rgb(184, 174, 174);
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+
+
+    /* font-size: 1em; */
+    & p {
+        font-size: 15px;
+        text-align: center;
+        padding-block: 20px;
+    }
+
+    & hr {
+        height: 2;
+        width: 95vw;
+        margin-left: 2vw;
+    }
+
+    & img {
+        clip-path: circle();
+        width: 100px;
+        height: auto;
+    }
+
+    & .footer-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0px;
+
+        & ul li {
+            list-style-type: none;
+        }
+
+        & h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+    }
+
+}

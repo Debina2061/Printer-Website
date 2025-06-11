@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: white;
+  }
+  .container{
+    padding-top: 15%;
+    padding-left: 35%;
+    
+  }
+  .card{
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+  }
+.box input{
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+}
+.buttons button{
+          color: red;
+          padding: 15px;
+          border-radius: 8px;
+          border: none;
+          cursor: pointer;
+}
+.buttons button:hover{
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
+</style>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>login</h2>
+      <div class="box">
+        <p>Username: </p>
+        <input type="text" id="name" placeholder="Enter your Username">
+        <p>Password: </p>
+        <input type="text" id="name" placeholder="Enter your password" required>
+      </div>
+      <br>
+      <div class="buttons">
+        <form onsubmit=" return validate()" action="home.html">
+        <button type="signin" onclick="showAlert()">login</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+  <script>
+      function validate(){
+     var name = document.getElementById("name");
+            var password = document.getElementById("password");
+    if (name.value=="" || password.value=="" ) 
+            {
+                alert("Form Cannot be empty");
+                return false;
+
+            } else {
+                true;
+            }
+          }
+          function showAlert()
+          {
+            var name = document.getElementById("name").value;
+            alert("Welcome to our Store" +" " +name);
+          }
+  </script>
+</body>
+</html>

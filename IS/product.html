@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printer Store</title>
+    <link href="product.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<!-- internal css -->
+<style>
+    *{
+
+        text-decoration: none;
+    }
+    li {
+            color: aliceblue;
+            display: inline-block;
+            margin: 50px;
+        }
+    .name{
+        text-align: center;
+        font-size: 20px;
+    }
+</style>
+<body>
+<header>
+        <!-- for to create a suitable navigation bar -->
+    <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo"> 
+                <a href="home.html">
+                    <img src="./images/removed bg.png" style="width: 190px; margin-top: -50px; margin-left:-50px; height: 150px;"> 
+              </a>
+            </div>
+        </div>
+        <!-- to create a search bar -->
+        <div class="nav-search border">
+            <input placeholder="Search here" class="search-input">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel-all">
+            <i class="fa-solid fa-bars"></i>   
+        <!-- Inline CSS used -->
+        </div>
+        <a href="home.html" target="_main" style="text-decoration:none">Home</a>
+        <a href="Blog.html" target="_main" style="text-decoration:none">Blog</a>
+        <a href="product.html" target="_main" style="text-decoration:none">Products</a>
+        <a href="research.html" target="_main" style="text-decoration:none">Research</a>
+        <a href="aboutus.html" target="-main" style="text-decoration: none">About Us</a>
+    </div>
+</header>
+<div class="body-section">
+</div>
+<!-- for to create a header to know which is top sale in our shop -->
+<h1 style="background-color: #C00C1A; text-align: center; color:aliceblue">"Top Sales of the Month"</h1>
+<!-- for the cool and automatic sliding of a brand name -->
+<marquee>
+    <div class="logos-slide">
+    <img src="./images/canon.png"  style="margin: 40px">
+    <img src="./images/epson.png" style="margin: 40px">
+    <img src="./images/120 dell.png"  style="margin: 40px">
+    <img src="./images/xerox.png"  style="margin: 40px">
+    <img src="./images/ezgif.com-resize.gif"  style="margin: 40px">
+    </div> 
+</marquee>
+<!-- container to create a place for text -->
+    <div class="container">
+        <div class="recommend">
+            <p>Recommend for you:
+            </p>
+        </div>
+    </div>
+    <!-- boxes to create more box in them -->
+    <div class="boxes">
+        <div class="box">
+        <!-- image-holder to know which div bar holds image -->
+        <div class="imageholder"><img src="./images/Screenshot 2024-01-27 151600.png" width="150px" height="140px"></div>
+        <!-- name-holder to know which div bar contains name -->
+        <div class="nameholder">Canon pixma</div>
+        <!-- price to contain prices of product -->
+        <div class="price">
+            <span class="regularprice">Rs.49,000</span>
+            <span class="discountprice">Rs.45,000</span>
+        </div>
+        <!-- for to create an foundation for button -->
+        <div class="Buywrapper">
+        <!-- click on the button calls a function that gives alert -->
+        <button class="BuyNow" onclick="showAlert()">Buy</button>
+        </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/two.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">PIXMA G2020</div>
+            <div class="price">Rs.51,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+            </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/three.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">Canon Pixma TS207</div>
+            <div class="price">Rs.48,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/four.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">HP Hi-Speed USB 2.0  </div>
+            <div class="price">Rs.55,000</div>
+            <div class="Buywrapper">
+                <button class="Buy-Now" onclick="showAlert()">Buy</button>
+                </div>
+            </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/five.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">Canon Pixma E470  </div>
+            <div class="price">
+                <span class="regularprice">Rs.51,000</span>
+                <span class="discountprice">Rs.49,000</span>
+            </div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+            </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/six.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">Canon Pixma G2020 </div>
+            <div class="price">Rs.56,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+            </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/seven.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder"> Canon Pixma E450 </div>
+            <div class="price">Rs.45,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+            </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/eight.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">Sublimation Epson Printer L805 </div>
+            <div class="price">Rs.50,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/nine.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">Canon Pixma G670  </div>
+            <div class="price">Rs.45,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/ten.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder"> Canon Pixma GM4070 </div>
+            <div class="price"> 
+                <span class="regularprice">Rs.40,000</span>
+                <span class="discountprice">Rs.39,000</span>
+            </div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/eleven.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">Canon Pixma TR150  </div>
+            <div class="price">Rs.51,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        </div>
+    </div><br>
+    <div class="box">
+        <p>Top sales:
+        </p>
+    </div>
+   
+<div class="boxes">
+        <div class="box">
+            <div class="imageholder"><img src="./images/twelve.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">Xerox Mini Photo Lab Printer </div>
+            <div class="price">Rs.56,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/thirteen.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">Epson WorkForce Pro WF-C869 Printer  </div>
+            <div class="price">Rs.50,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/fourteen.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder"> Xerox 425 Wireless color printer </div>
+            <div class="price">
+                <span class="regularprice">Rs.45,000</span>
+                <span class="discountprice">Rs.40,000</span>
+            </div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/fifteen.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">Xerox Laser MFP 135a  </div>
+            <div class="price">Rs.55,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/sixteen.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder"> Dell Laserjet Printer </div>
+            <div class="price">Rs.50,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="image"><img src="./images/seventeen.jpeg" width="150px" height="140px"></div>
+            <div class="name"> Canon Wireless Printer </div>
+            <div class="price">Rs.40,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/eighteen.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">Epson Laserjet Pro MFP M28a  </div>
+            <div class="price"> 
+                <span class="regularprice">Rs.45,000</span>
+                <span class="discountprice">Rs.40,000</span>
+            </div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/nineteen.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">Canon-DCP T720DW  </div>
+            <div class="price">Rs.47,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/twenty.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">Epson Pantum P2509W Wireless Printer  </div>
+            <div class="price">Rs.52,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/twenty-two.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder"> Epson Pantum p2500W </div>
+            <div class="price">Rs.49,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/two.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">PIXMA G2020</div>
+            <div class="price">Rs.51,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/three.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder">Dell M2020 Printer  </div>
+            <div class="price">Rs.48,000</div>
+            <div class="Buywrapper">
+                <button class="Buy" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        <div class="box">
+            <div class="imageholder"><img src="./images/four.jpeg" width="150px" height="140px"></div>
+            <div class="nameholder"> Dell inkjet Printer </div>
+            <div class="price">Rs.55,000</div>
+            <div class="Buywrapper">
+                <button class="BuyNow" onclick="showAlert()">Buy</button>
+                </div>
+        </div>
+        </div>
+        <br>
+    <div class="box">
+        <p>Latest Products:
+        </p>
+    </div>
+<div class="boxes">
+    <div class="box">
+        <div class="imageholder"><img src="./images/nineteen.jpeg" width="150px" height="140px"></div>
+        <div class="nameholder">Canon-DCP T720DW  </div>
+        <div class="price">Rs.47,000</div>
+        <div class="Buywrapper">
+            <button class="Buy" onclick="showAlert()">Buy</button>
+            </div>
+    </div>
+    <div class="box">
+        <div class="imageholder"><img src="./images/eighteen.jpeg" width="150px" height="140px"></div>
+        <div class="nameholder">Epson Laserjet Pro MFP M28a  </div>
+        <div class="price"> 
+            <span class="regularprice">Rs.45,000</span>
+            <span class="discountprice">Rs.40,000</span>
+        </div>
+        <div class="Buywrapper">
+            <button class="Buy" onclick="showAlert()">Buy</button>
+            </div>
+    </div>
+    <div class="box">
+        <div class="imageholder"><img src="./images/seventeen.jpeg" width="150px" height="140px"></div>
+        <div class="nameholder"> Canon Laser 107W Single Laser Wireless Printer </div>
+        <div class="price">Rs.40,000</div>
+        <div class="Buywrapper">
+            <button class="Buy" onclick="showAlert()">Buy</button>
+            </div>
+    </div>
+    <div class="box">
+        <div class="imageholder"><img src="./images/sixteen.jpeg" width="150px" height="140px"></div>
+        <div class="nameholder"> Dell Laserjet Printer </div>
+        <div class="price">Rs.50,000</div>
+        <div class="Buywrapper">
+            <button class="Buy" onclick="showAlert()">Buy</button>
+            </div>
+    </div>
+    <div class="box">
+        <div class="imageholder"><img src="./images/twenty-two.jpeg" width="150px" height="140px"></div>
+        <div class="nameholder"> Epson Pantum p2500W </div>
+        <div class="price">Rs.49,000</div>
+        <div class="Buywrapper">
+            <button class="Buy" onclick="showAlert()">Buy</button>
+            </div>
+    </div>
+    <div class="box">
+        <div class="imageholder"><img src="./images/ten.jpeg" width="150px" height="140px"></div>
+        <div class="nameholder"> Canon Pixma GM4070 </div>
+        <div class="price">
+            <span class="regularprice">Rs.40,000</span>
+            <span class="discountprice">Rs.39,000</span>
+        </div>
+        <div class="Buywrapper">
+            <button class="Buy" onclick="showAlert()">Buy</button>
+            </div>
+    </div>
+    <div class="box">
+        <div class="imageholder"><img src="./images/Screenshot 2024-01-27 151600.png" width="150px" height="140px"></div>
+        <div class="nameholder">Canon pixma</div>
+        <div class="price">   
+            <span class="regularprice">Rs.49,000</span>
+            <span class="discountprice">Rs.45,000</span>
+        </div>
+        <div class="Buywrapper">
+            <button class="Buy" onclick="showAlert()">Buy</button>
+            </div>
+    </div>
+    <div class="box">
+        <div class="imageholder"><img src="./images/nine.jpeg" width="150px" height="140px"></div>
+        <div class="nameholder">Canon Pixma G670  </div>
+        <div class="price">Rs.45,000</div>
+        <div class="Buywrapper">
+            <button class="Buy" onclick="showAlert()">Buy</button>
+            </div>
+    </div>
+    <div class="box">
+        <div class="imageholder"><img src="./images/nineteen.jpeg" width="150px" height="140px"></div>
+        <div class="nameholder">Canon-DCP T720DW  </div>
+        <div class="price">Rs.47,000</div>
+        <div class="Buywrapper">
+            <button class="Buy" onclick="showAlert()">Buy</button>
+            </div>
+    </div>
+    <div class="box">
+        <div class="imageholder"><img src="./images/eleven.jpeg" width="150px" height="140px"></div>
+        <div class="nameholder">Canon Pixma TR150  </div>
+        <div class="price">Rs.51,000</div>
+        <div class="Buywrapper">
+            <button class="Buy" onclick="showAlert()">Buy</button>
+            </div>
+    </div>
+    <div class="box">
+        <div class="imageholder"><img src="./images/fifteen.jpeg" width="150px" height="140px"></div>
+        <div class="nameholder">Xerox Laser MFP 135a  </div>
+        <div class="price">Rs.55,000</div>
+        <div class="Buywrapper">
+            <button class="Buy" onclick="showAlert()">Buy</button>
+            </div>
+    </div>
+    <div class="box">
+        <div class="imageholder"><img src="./images/five.jpeg" width="150px" height="140px"></div>
+        <div class="nameholder">Canon Pixma E470  </div>
+        <div class="price"> 
+            <span class="regularprice">Rs.51,000</span>
+            <span class="discountprice">Rs.49,000</span>
+        </div>
+        <div class="Buywrapper">
+            <button class="Buy" onclick="showAlert()">Buy</button>
+            </div>
+    </div>
+    <div class="box">
+        <div class="imageholder"><img src="./images/fourteen.jpeg" width="150px" height="140px"></div>
+        <div class="nameholder"> Xerox 425 Wireless color printer </div>
+        <div class="price">
+            <span class="regularprice">Rs.45,000</span>
+            <span class="discountprice">Rs.40,000</span>
+        </div>
+        <div class="Buywrapper">
+            <button class="Buy" onclick="showAlert()">Buy</button>
+            </div>
+    </div>
+    </div>
+    <footer>
+         <!-- from here on out it is for footer section -->
+        <div class="footer">
+            <p> If you need help then you can contact our Customer
+                Support
+                0255-00096.</p>
+            <hr>
+            <div class="footer-container">
+                <img src="./images/logo3.png" alt="logo">
+                <div class="footer_policy">
+                    <h3>Our Policy</h3>
+                    <ul>
+                        <li>shipping Process</li>
+                        <li>Warranties</li>
+                        <li>Privacy policy</li>
+                        <li>Terms Of use</li>
+                    </ul>
+                </div>
+                <div class="footer_social">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><i
+                                class="fa fa-facebook"></i>Facebook</li>
+                        <li><i class="fa fa-tiktok"></i>Tiktok</li>
+                        <li><i
+                                class="fa fa-instagram"></i>Instagram</li>
+                    </ul>
+                </div>
+                <div class="footer_service">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li>Contact us</li>
+                        <li><i class="fa fa-Phone-number"></i>call
+                            us
+                            025-2354</li>
+                        <li>Email www123@gmail.com</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p>Copyright © 2024,All Rights Recerved. </p>
+        </div>
+    </footer>
+    <script>
+        // it's a function which can be called when you click on button buy-now
+        function showAlert()
+        {
+            // it's the output
+            alert("Thank you for your purchase");
+        }
+        
+    </script>
+</body>
+</html>
